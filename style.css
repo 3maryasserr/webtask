@@ -1,0 +1,58 @@
+body{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    height: 100vh;
+}
+.form{
+    margin: 100px;
+    padding: 10px;
+    height: 50vh;
+    width: 50vh;
+    background-color: white;
+    border-radius: 10px;
+}
+h1{
+    margin-left: 20px;
+    margin-bottom: 30px;
+    font-size: 35px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#input{
+    width: 200px;
+    margin-left: 50px;
+    border-radius: 10px;
+    font-weight: bold;
+
+    vertical-align: middle;
+    text-align: center;
+    display: table-cell;
+}
+button{
+    width: 100px;
+    margin: 30px 100px;
+    font-weight: bold;
+    border-radius: 10px;
+    background-color: cadetblue;
+    transition: .5s;
+}
+button:hover{
+    transform: scale(1);
+    background-color: rgb(31, 97, 221);
+}
+.print{
+    display: flex;
+    align-items: center;
+}
+p{
+    font-size: 30px;
+    padding-left: 100px;
+    font-weight: bold;
+}
+.red-background {
+    background-color: red;
+  }

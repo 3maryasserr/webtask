@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="form">
+        <h1> Enter a Number :) </h1>
+<div class="div1">
+        <div >
+    <input id="input" type="text" >
+</div>
+<div>
+    <button onclick="check()" id="btn">Check</button>
+</div>
+<div class="print">
+    <p id="print">
+
+    </p>
+</div>
+</div>
+</div>
+<script>
+    function check(){
+        const print = document.getElementById("print");
+        print.innerHTML= " ";
+        let number = document.getElementById("input").value;
+        try{
+            if(number==("")) 
+                throw "Empty";
+                
+            
+            if(isNaN(number))
+                throw "Not a Number";
+            if(number>5)
+                throw "High"
+            if(number<5)
+                throw "Low"
+            if(number==5)
+                throw "Equal"
+        }
+        catch(err)
+        {
+            print.innerHTML = err;
+        }
+}
+</script>
+</body>
+</html>
